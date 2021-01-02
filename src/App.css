@@ -32,6 +32,13 @@ body{
     border-radius: 10px;
 }
 
+.timer p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 3%;
+}
+
 .timer h2{
     padding-bottom: 50px;
     padding-top:50px;
@@ -41,18 +48,39 @@ body{
     text-align: center;
 }
 
-.button{
-    text-align: center;
-    padding-bottom: 50px;
+.button-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 40px;
 }
 
-.button button{
+.start-stop-button{
+    width: 20%;
+    padding-right: 2%;
+}
+
+.start-stop-button button{
     width: 100%;
     height: 35px;
     max-width: 100px;
     border-radius: 10px;
     background: linear-gradient(100.13deg, #58E641 0%, rgba(84, 201, 64, 0.788324) 21.17%, rgba(38, 243, 157, 0.534833) 46.52%, rgba(0, 233, 248, 0.276655) 72.33%, rgba(0, 133, 255, 0) 100%), #298F2D;
 }
+
+.reset-button{
+    width: 20%;
+    padding-left: 2%;
+}
+
+.reset-button button{
+    width: 100%;
+    height: 35px;
+    max-width: 100px;
+    border-radius: 10px;
+    background: linear-gradient(100.13deg, #F96767 0%, rgba(245, 71, 15, 0.788324) 21.17%, rgba(222, 54, 54, 0.534833) 46.52%, rgba(255, 200, 135, 0.276655) 72.33%, rgba(250, 255, 0, 0) 100%), #FF0000;
+}
+
 
 .time-adjust{
     background: #626262;
@@ -61,15 +89,12 @@ body{
     max-width: 500px;
     margin: 50px auto;
     border-radius: 10px;
-    
-}
+}   
 
 
 .session-box{
+    width: 10%;
     display: inline-block;
-    width: 50%;
-    padding-left: 7%;
-    padding-top: 3%;
 }
 
 .session-box h2{
@@ -80,10 +105,8 @@ body{
 }
 
 .break-box{
+    width: 10%;
     display: inline-block;
-    width: 50%;
-    padding-left: 7%;
-    padding-top: 3%;
 }
 
 .break-box h2{
