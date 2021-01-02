@@ -75,7 +75,31 @@ function App() {
       </div>
       
       <div className="time-adjust">
-        <p>d</p>
+        <div className="session-box">
+          <h2>Session</h2>
+          <div className="session-adjust-min">
+            <input type="number"></input>
+            <h2>min</h2>
+          </div>
+          <div className="session-adjust-seg">
+            <input type="number"></input>
+            <h2>seg</h2>
+          </div>
+        </div>
+
+        <div className="break-box">
+          <h2>Break</h2>
+          <div className="break-adjust-min">
+            <input type="number"></input>
+            <h2>min</h2>
+          </div>
+          <div className="break-adjust-seg">
+            <input type="number"></input>
+            <h2>seg</h2>
+          </div>
+        </div>
+
+
       </div>
 
     </div>

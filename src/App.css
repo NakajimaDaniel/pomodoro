@@ -60,5 +60,80 @@ body{
     height: 100%;
     max-width: 500px;
     margin: 50px auto;
+    border-radius: 10px;
+    
 }
 
+
+.session-box{
+    display: inline-block;
+    width: 50%;
+    padding-left: 7%;
+    padding-top: 3%;
+}
+
+.session-box h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 3%;
+}
+
+.break-box{
+    display: inline-block;
+    width: 50%;
+    padding-left: 7%;
+    padding-top: 3%;
+}
+
+.break-box h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 3%;
+}
+
+
+.session-adjust-min{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+.session-adjust-min h2{
+    font-size:17px;
+    padding-left: 2%;
+}   
+
+.break-adjust-min{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+}
+
+.break-adjust-min h2{
+    font-size: 17px;
+    padding-left: 2%;
+}
+
+.session-adjust-seg{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 7%;
+}
+
+.session-adjust-seg h2{
+    font-size: 17px;
+    padding-left: 2%;
+}
+
+.break-adjust-seg{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 7%;
+}
+
+.break-adjust-seg h2{
+    font-size: 17px;
+    padding-left: 2%;
+}
