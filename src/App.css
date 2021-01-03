@@ -93,8 +93,9 @@ body{
 
 
 .session-box{
-    width: 10%;
     display: inline-block;
+    width: 40%;
+    margin: 20px 20px;
 }
 
 .session-box h2{
@@ -105,8 +106,9 @@ body{
 }
 
 .break-box{
-    width: 10%;
     display: inline-block;
+    width: 40%;
+    margin: 20px 20px;
 }
 
 .break-box h2{
