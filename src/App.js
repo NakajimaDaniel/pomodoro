@@ -1,7 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import {Helmet} from "react-helmet";
 
 function App() {
 
@@ -115,7 +115,9 @@ function App() {
 
   return (
     <div className="App">
-
+      <helmet>
+        <title>My Title</title>
+      </helmet>
       <div className="title">
         <p>Pomodoro</p>
         <p>Timer</p>
