@@ -53,11 +53,11 @@ body{
     flex-direction: row;
     justify-content: center;
     padding-bottom: 40px;
+    
 }
 
 .start-stop-button{
-    width: 20%;
-    padding-right: 2%;
+    margin: auto;
 }
 
 .start-stop-button StartStopButton{
@@ -66,8 +66,7 @@ body{
 
 
 .reset-button{
-    width: 20%;
-    padding-left: 2%;
+    margin: auto;
 }
 
 .reset-button ResetButton{
@@ -138,6 +137,11 @@ body{
     display: flex;
     flex-direction: row;
     padding-bottom: 7%;
+}
+
+.session-adjust-seg TextField{
+    width: 40%;
+    
 }
 
 .session-adjust-seg h2{
