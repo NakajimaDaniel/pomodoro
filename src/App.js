@@ -2,8 +2,16 @@ import React,{useState, useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Helmet} from "react-helmet";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause, faRedoAlt } from '@fortawesome/free-solid-svg-icons';
+import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
 
 function App() {
+
+  const startIcon = <FontAwesomeIcon icon={faPlay} color="#474747"/>
+  const pauseIcon = <FontAwesomeIcon icon={faPause} color="#FFC5C5"/>
+  const redoIcon = <FontAwesomeIcon icon={faRedoAlt} color='#474747'/>
 
 
   const [seconds, setSeconds] = useState(0);
@@ -40,6 +48,33 @@ function App() {
     setDisabled(false);
     setSessionControl(true);
   }
+
+  const StartStopButton = withStyles({
+    root: {
+      background: stopvar == true ? 'linear-gradient(45deg, #298F2D 30%, #5CB160 90%)' : 'linear-gradient(45deg, #A90000 30%, #FF2424 90%)',
+      borderRadius:10,
+      border: 0,
+      color: 'white',
+      height: 35,
+      padding: '0 30px',
+      boxShadow: 'none',
+      width: 100,
+    }
+  })(Button);
+
+
+  const ResetButton = withStyles({
+    root: {
+      background:'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
+      borderRadius:10,
+      border: 0,
+      color: 'white',
+      height: 35,
+      padding: '0 30px',
+      boxShadow: 'none',
+      width: 100,
+    }
+  }) (Button);
 
   useEffect(()=>{
 
@@ -116,8 +151,9 @@ function App() {
   return (
     <div className="App">
       <helmet>
-        <title>My Title</title>
+        <title>{sessionControl == true ? `Working Session` : `Break`} {minutes<10 ? `0${minutes}` : minutes }:{seconds<10 ? `0${seconds}` : seconds}</title>
       </helmet>
+
       <div className="title">
         <p>Pomodoro</p>
         <p>Timer</p>
@@ -131,10 +167,12 @@ function App() {
 
         <div className="button-wrap">
           <div className="start-stop-button">
-            <button onClick={startStop}>Start/Stop</button>
+            <StartStopButton onClick={startStop}>{stopvar === true ? startIcon : pauseIcon} </StartStopButton>
           </div>
+
+
           <div className="reset-button">
-            <button onClick={resetButton}>Reset</button>
+            <ResetButton onClick={resetButton}>{redoIcon}</ResetButton>
           </div>
         </div>
       </div>
