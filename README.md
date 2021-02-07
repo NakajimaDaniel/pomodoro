@@ -1,4 +1,7 @@
-![pomodorobanner](https://user-images.githubusercontent.com/59265044/107153178-dd866180-694a-11eb-8eef-08380892499e.png)
+
+
+![pomodorobanner](https://user-images.githubusercontent.com/59265044/107153247-30601900-694b-11eb-8d3e-86a894401764.png)
+
 
 # Pomodoro Clock
 
